@@ -24,11 +24,11 @@ var idGenerator = require('mongo-incremental-id-generator')(connectionString)
 
 The connection string should follow the format described in [the mongo connection string docs](http://docs.mongodb.org/manual/reference/connection-string/).
 
-After we connected we can generate incremental ids for specific keys.
+After we connected we can generate incremental ids for specific keys. Key is always string and step is always number.
 The format for callbacks is always `callback(error, value)` where error is null if no exception has occured.
 
 ```js
-// generate new id for the key with increment step. By default step is equal to 1
+// generate new id for the string key with increment step. By default step is equal to 1
 idGenerator.generateId(key, step, function (err, id) {
 	// id - auto generated id
 })
