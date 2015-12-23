@@ -9,7 +9,7 @@ Don't use this generator unless you actually need auto incremental ids because i
 
 Can you re-use generator values?
 
-Well – yes, technically you can. But – NO, you shouldn't. Never. Never ever. Not only that this would destroy the nice chronological sequence (you can't judge a row's “age” by just looking at the ID any more), the more you think about it the more headaches it'll give you. Moreover it is an absolute contradiction to the entire concept of unique row identifiers.
+Well – yes, technically you can. But – NO, you shouldn't. Never. Never ever. Not only that this would destroy the nice chronological sequence, the more you think about it the more headaches it'll give you. Moreover it is an absolute contradiction to the entire concept of unique identifiers.
 
 So unless you have good reasons to re-use generator values, JUST DON'T DO IT!
 
