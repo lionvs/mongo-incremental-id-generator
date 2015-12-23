@@ -28,7 +28,7 @@ After we connected we can generate incremental ids for specific keys.
 The format for callbacks is always `callback(error, value)` where error is null if no exception has occured.
 
 ```js
-// generate new id for the key with increment step
+// generate new id for the key with increment step. By default step is equal to 1
 idGenerator.generateId(key, step, function (err, id) {
 	// id - auto generated id
 })
