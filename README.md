@@ -1,6 +1,6 @@
 # mongo-incremental-id-generator
 
-A [node.js](http://nodejs.org) module for mongodb, that generates auto incremental ids for specified keys. 
+A [node.js](http://nodejs.org) module for mongodb, that generates auto incremental ids for specified string keys. 
 
 [![Build Status](https://travis-ci.org/lionvs/mongo-incremental-id-generator.svg?branch=master)](https://travis-ci.org/lionvs/mongo-incremental-id-generator)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
