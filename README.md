@@ -33,12 +33,19 @@ idGenerator.generateId(key, step, function (err, id) {
 	// id - auto generated id
 })
 
+idGenerator.generateId(key, function (err, id) {
+})
+
 // pick last generated id for the key
 idGenerator.pickLastId(key, function (err, id) {
 	// id - last generated id
 })
 
-// reset last generated id for the key to the newId 
+// reset last generated id for the key to the newId. By default it resets to 0.
 idGenerator.resetId(key, newId, function (err, id) {
 	// id - newId
+})
+
+idGenerator.resetId(key, function (err, id) {
+	// id - 0
 })
