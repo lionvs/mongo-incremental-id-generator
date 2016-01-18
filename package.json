@@ -1,6 +1,6 @@
 {
   "name": "mongo-incremental-id-generator",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "dependencies": {
     "mongojs": "^2.2.2",
     "util": "^0.10.3"
