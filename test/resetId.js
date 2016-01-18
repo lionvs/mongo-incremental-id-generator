@@ -21,6 +21,17 @@ test('reset id test', function (t) {
   })
 })
 
+test('skip newId parameter', function (t) {
+  var key = 'simple'
+  h.clearDB(t, function () {
+    generator.resetId(key, function (err, value) {
+      t.error(err)
+      t.equal(value, 0)
+      t.end()
+    })
+  })
+})
+
 test('bad key parameter test', function (t) {
   var key = { a: 'simple' }
   h.clearDB(t, function () {

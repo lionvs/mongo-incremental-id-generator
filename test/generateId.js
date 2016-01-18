@@ -18,6 +18,17 @@ test('generate several id for the same key test', function (t) {
   })
 })
 
+test('skip step parameter', function (t) {
+  var key = 'simple'
+  h.clearDB(t, function () {
+    generator.generateId(key, function (err, value) {
+      t.error(err)
+      t.equal(value, 1)
+      t.end()
+    })
+  })
+})
+
 test('generate several id for different keys test', function (t) {
   var key1 = 'simple1'
   var key2 = 'simple2'
